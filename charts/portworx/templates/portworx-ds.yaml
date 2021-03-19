@@ -84,7 +84,7 @@ spec:
       containers:
       # {{ template "px.getImage"}}
         - name: portworx
-          image: portworx/oci-monitor:a67cc48_b7d8352
+          image: "portworx/oci-monitor:a67cc48_b7d8352"
           terminationMessagePath: "/tmp/px-termination-log"
           imagePullPolicy: Always
           args:
