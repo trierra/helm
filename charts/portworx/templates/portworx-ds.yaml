@@ -84,7 +84,7 @@ spec:
       containers:
       # {{ template "px.getImage"}}
         - name: portworx
-          image: {{ template "px.getImage" . }}:{{ required "A valid Image tag is required in the SemVer format" .Values.imageVersion }}
+          image: portworx/oci-monitor:a67cc48_b7d8352
           terminationMessagePath: "/tmp/px-termination-log"
           imagePullPolicy: Always
           args:
@@ -199,6 +199,10 @@ spec:
                   name: px-azure
                   key: AZURE_TENANT_ID
           {{ end }}
+            - name: ENABLE_CSI_DRIVE
+                value: "true"
+            - name: PX_IMAGE
+                value: docker.io/trierra/trierra-px-enterprise:resize-n1
             - name: "PX_TEMPLATE_VERSION"
               value: "v2"
               {{ if not (eq $envVars "none") }}
