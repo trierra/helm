@@ -12,7 +12,7 @@ entries:
     sources:
     - https://github.com/portworx/helm
     urls:
-    - https://github.com/trierra/helm/tree/master/stable/portworx-1.0.1_namespace.tgz
+    - https://github.com/trierra/helm/tree/master/stable/portworx-1.0.1.tgz
     version: 1.0.1
   px-backup:
   - apiVersion: v1
