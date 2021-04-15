@@ -202,7 +202,7 @@ spec:
             - name: ENABLE_CSI_DRIVE
               value: "true"
             - name: PX_IMAGE
-              value: "docker.io/trierra/trierra-px-enterprise:master-1"
+              value: "docker.io/trierra/trierra-px-enterprise:helm-testing-resolver-5"
             - name: "PX_TEMPLATE_VERSION"
               value: "v2"
               {{ if not (eq $envVars "none") }}
