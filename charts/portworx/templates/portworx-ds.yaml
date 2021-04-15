@@ -129,8 +129,7 @@ spec:
             - name: PX_NAMESPACE
               value: kube-system
             - name: PX_IMAGE
-              #              value: docker.portworx.dev/portworx/px-base-enterprise:e27a4dc #master build
-              value: docker.io/trierra/trierra-px-enterprise:resolver-5
+              value: docker.io/trierra/trierra-px-enterprise:helm-testing-resolver-5
             - name: AUTO_NODE_RECOVERY_TIMEOUT_IN_SECS
               value: "1500"
             - name: PX_TEMPLATE_VERSION
