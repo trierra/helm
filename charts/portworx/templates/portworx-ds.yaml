@@ -128,8 +128,8 @@ spec:
                   fieldPath: spec.nodeName
             - name: PX_NAMESPACE
               value: kube-system
-            - name: PX_IMAGE
-              value: docker.io/trierra/trierra-px-enterprise:helm-testing-resolver-5
+#            - name: PX_IMAGE
+#              value: docker.io/trierra/trierra-px-enterprise:helm-testing-resolver-5
             - name: AUTO_NODE_RECOVERY_TIMEOUT_IN_SECS
               value: "1500"
             - name: PX_TEMPLATE_VERSION
@@ -142,7 +142,7 @@ spec:
               value: pwxbuild
             - name: REGISTRY_PASS
               value: fridaydemos
-          image: portworx/oci-monitor:c89b745_bac8d5b
+          image: portworx/oci-monitor:bc2dddb_677b632
           imagePullPolicy: Always
           livenessProbe:
             failureThreshold: 3
